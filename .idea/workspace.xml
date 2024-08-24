@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="884ff3af-76b5-4de9-af9b-e6e1967b1c06" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2928c623-c53d-407c-889c-1a10c798cfc4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2928c623-c53d-407c-889c-1a10c798cfc4/storage_v2/_src_/database/postgres.edMnLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2928c623-c53d-407c-889c-1a10c798cfc4/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2928c623-c53d-407c-889c-1a10c798cfc4/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2928c623-c53d-407c-889c-1a10c798cfc4/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2928c623-c53d-407c-889c-1a10c798cfc4/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/2928c623-c53d-407c-889c-1a10c798cfc4/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/java/qp/elearning/config_service/ConfigServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-service/src/test/java/qp/elearning/config_service/ConfigServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/dto/UserLoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/dto/UserRegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/dto/UserResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/security/JwtTokenProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/qp/elearning/user_service/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/db/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/qp/elearning/user_service/UserServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="2928c623-c53d-407c-889c-1a10c798cfc4" value="Blue" />
+    </colors>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Dockerfile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MohamedEID12345"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MohamedEID12345/e-learning.git",
+    "accountId": "8273f22c-255e-4b71-91ad-69d474d59e4b"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2l6S3hDkWaYZZgI3jk7hd5SUO7s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Docker.config-service/Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml.config-server: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.user-service: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Docker.user-service/Dockerfile.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/elearning/config-service/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="qp.elearning.user_service.security" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Database Script.schema.sql">
+    <configuration name="schema.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/user-service/src/main/resources/db/schema.sql" />
+      <script-mode>FILE</script-mode>
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="qp.elearning.config_service.ConfigServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="qp.elearning.user_service.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="config-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="config-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.config-server: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="config-server" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="user-service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="user-service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.schema.sql" />
+        <item itemvalue="Docker.user-service/Dockerfile" />
+        <item itemvalue="Docker.config-service/Dockerfile" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.config-server: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="884ff3af-76b5-4de9-af9b-e6e1967b1c06" name="Changes" comment="" />
+      <created>1724498837701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724498837701</updated>
+      <workItem from="1724498838556" duration="12395000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
