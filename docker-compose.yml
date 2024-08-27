@@ -1,4 +1,5 @@
-version: '3.7'
+version: '3.8'
+
 services:
   config-server:
     image: config-server:latest
@@ -8,6 +9,12 @@ services:
       - "8888:8888"
     networks:
       - eLearning-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
   discovery-server:
     image: discovery-server:latest
@@ -19,6 +26,12 @@ services:
       - eLearning-network
     depends_on:
       - config-server
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8761/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
   api-gateway:
     image: api-gateway:latest
@@ -30,19 +43,37 @@ services:
       - eLearning-network
     depends_on:
       - discovery-server
+      - config-server
+    environment:
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://discovery-server:8761/eureka/
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
   user-service:
     image: user-service:latest
     build:
       context: ./user-service
     ports:
-      - "8081:8081"
+      - "8086:8086"
     networks:
       - eLearning-network
     depends_on:
       - discovery-server
+      - config-server
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://discovery-server:8761/eureka/
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8086/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
   course-service:
     image: course-service:latest
@@ -54,8 +85,17 @@ services:
       - eLearning-network
     depends_on:
       - discovery-server
+      - config-server
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://discovery-server:8761/eureka/
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8082/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
   payment-service:
     image: payment-service:latest
@@ -67,8 +107,17 @@ services:
       - eLearning-network
     depends_on:
       - discovery-server
+      - config-server
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://discovery-server:8761/eureka/
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8083/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
   rating-service:
     image: rating-service:latest
@@ -80,8 +129,17 @@ services:
       - eLearning-network
     depends_on:
       - discovery-server
+      - config-server
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://discovery-server:8761/eureka/
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8084/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
   notification-service:
     image: notification-service:latest
@@ -93,8 +151,17 @@ services:
       - eLearning-network
     depends_on:
       - discovery-server
+      - config-server
     environment:
       - SPRING_PROFILES_ACTIVE=docker
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
+      - EUREKA_CLIENT_SERVICE_URL_DEFAULTZONE=http://discovery-server:8761/eureka/
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8085/actuator/health"]
+      interval: 30s
+      retries: 3
+      start_period: 10s
+      timeout: 10s
 
 networks:
   eLearning-network:

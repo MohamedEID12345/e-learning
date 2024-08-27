@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>qp.elearning</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>Parent POM</name>
+    <description>Parent POM for eLearning project</description>
+
+    <modules>
+        <!-- List all child modules here -->
+        <module>user-service</module>
+        <module>course-service</module>
+        <module>notification-service</module>
+        <module>api-gateway</module>
+        <module>discovery-server</module>
+        <!-- Add other modules as needed -->
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Define common dependency versions here -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>3.3.3</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>2021.0.4</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <!-- Define common plugins and their versions here -->
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>3.3.3</version>
+                </plugin>
+                <!-- Add other common plugins if needed -->
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>
